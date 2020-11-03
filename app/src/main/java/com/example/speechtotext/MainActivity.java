@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         speechrecoginizer.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
         speechrecoginizer.putExtra(RecognizerIntent.EXTRA_PROMPT,"Speak something");
         try {
-            startActivityForResult(speechrecoginizer,Permission_code);
+            startActivityForResult(speechrecoginizer,1);
 
         }catch (Exception e){
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
